@@ -6,6 +6,8 @@ class PostWillRenderEmbed extends React.Component {
     render() {
         let title = '';
         let description = '';
+        const iframeWidth = PostWillRenderEmbed.plugin.props.iframeWidth;
+        const iframeHeight = PostWillRenderEmbed.plugin.props.iframeHeight;
         try {
             title = this.props.embed.data.title;
             description = this.props.embed.data.description;
@@ -22,8 +24,10 @@ class PostWillRenderEmbed extends React.Component {
                         {title}
                     </a>
                 </h5>
-                <small>{description}</small>
-                <iframe src={url} width="600" height="350">
+                <div>
+                    <small>{description}</small>
+                </div>
+                <iframe src={url} width={iframeWidth} height={iframeHeight}>
                 </iframe>
             </div>
         );
