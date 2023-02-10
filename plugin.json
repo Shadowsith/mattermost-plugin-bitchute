@@ -1,0 +1,16 @@
+{
+    "id": "bitchute",
+    "name": "Bitchute",
+    "description": "Mattermost web app plugin to have an embedded videoplayer for Bitchute urls",
+    "homepage_url": "https://github.com/Shadowsith/mattermost-plugin-bitchute",
+    "support_url": "https://github.com/Shadowsith/mattermost-plugin-bitchute/issues",
+    "release_notes_url": "https://github.com/Shadowsith/mattermost-plugin-bitchute/releases/tag/1.0.0",
+    "version": "1.0.0",
+    "webapp": {
+        "bundle_path": "main.js"
+    },
+    "props": {
+        "iframeWidth": 600,
+        "iframeHeight": 340
+    }
+}
